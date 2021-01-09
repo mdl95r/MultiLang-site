@@ -1,0 +1,9 @@
+extends html-components/layouts/_default.pug
+
+block vars
+    - let pageTitle = 'LEO Shop. Main page'
+    - let pageDesc = 'LEO Shop. Best shop in the world, main page'
+
+block seo
+    meta(name="description", content= pageDesc)
+    title= pageTitle

@@ -1,0 +1,28 @@
+{
+    "lang-title": "Language:",
+    "lang-list": [
+        "English",
+        "Russian",
+        "German"
+    ],
+    "topMenu": [
+        "Account",
+        "Wishlist",
+        "Checkout",
+        "Log In",
+        "Sign Up"
+    ],
+    "mainMenu": [
+        "Home",
+        "Women",
+        "Men",
+        "Other",
+        "Purchase"
+    ],
+    "searchPlaceHolder": "search",
+    "cart": "cart",
+    "currency": "Currency:",
+    "menu": "Menu",
+    "title": "LEO Shop. Main page",
+    "description": "LEO Shop. Best shop in the world, main page"
+}

@@ -1,0 +1,28 @@
+{
+    "lang-title": "Sprache:",
+    "lang-list": [
+        "Englisch",
+        "Russisch",
+        "Deutsche"
+    ],
+    "topMenu": [
+        "Konto",
+        "Wunschzettel",
+        "Auschecken",
+        "Einloggen",
+        "Anmelden"
+    ],
+    "mainMenu": [
+        "Zuhause",
+        "Frauen",
+        "Männer",
+        "Andere",
+        "Kauf"
+    ],
+    "searchPlaceHolder": "Suche",
+    "cart": "Wagen",
+    "currency": "Währung:",
+    "menu": "Speisekarte",
+    "title": "LEO Shop. Hauptseite",
+    "description": "LEO Shop. Bester Shop der Welt, Hauptseite"
+}

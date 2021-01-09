@@ -1,0 +1,57 @@
+mixin valeusInfo(page, link)
+    li.nav-info__item
+        a(href=link class="nav-info__link")= page
+
+mixin valeusMenu(page, link)
+    li.nav-menu__item
+        a(href=link class="nav-menu__link")= page
+
+header.header
+    .bar-wrapper
+        .container
+            .top-bar
+                .select-options
+                    .lang-select.js-lang-select
+                        span Language:
+                        span.lang-select__btn.js-lang-select-btn(type='button' aria-label='Current language') English
+                        ul.languages-list.js-languages-list
+                            li.languages-list__item.languages-list__item--active(data-lang="en" data-default-lang="true") English
+                            li.languages-list__item(data-lang="ru") Russian
+                            li.languages-list__item(data-lang="de") German
+                    .currency-select.js-currency-select
+                        span Currency:
+                        span.currency-select__btn.js-currency-select-btn(type='button' aria-label='Current currency') USD
+                        ul.currency-list.js-currency-list
+                            li.currency-list__item.currency-list__item--active USD
+                            li.currency-list__item EUR
+                            li.currency-list__item GBP
+                nav.nav-info
+                    ul.nav-info__list
+                        +valeusInfo('Account', '#')
+                        +valeusInfo('Wishlist', '#')
+                        +valeusInfo('Checkout', '#')
+                        +valeusInfo('Log In', '#')
+                        +valeusInfo('Sign Up', '#')
+    .container
+        .main-bar
+            h1.main-bar__logo Leo Shop
+            nav.nav-menu
+                ul.nav-menu__list
+                    +valeusMenu('Home', 'index.html')
+                    +valeusMenu('Women', '#')
+                    +valeusMenu('Men', '#')
+                    +valeusMenu('Other', 'other.html')
+                    +valeusMenu('Purchase', 'single.html')
+            form.form-main(action='#')
+                input.form-main__input(type='search' placeholder='search...')
+                button.form-main__btn(title='Find' type='button' aria-label='Find')
+            .tags-purchase-container
+                button#search.search-mob(title='search' aria-label='search')
+                button#tags.tags(title='Tags' aria-label='Tags')
+                button#purchase.purchase(title='Purchase' aria-label='Purchase')
+            .purchase-count
+                span.purchase-count__cart Cart
+                a#count-goods.purchase-count__count(href='#' data-value='0') 0
+        .menu-mob
+            span Menu
+            button#hamburger-btn(type='button')

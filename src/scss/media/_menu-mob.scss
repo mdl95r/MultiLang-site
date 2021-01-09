@@ -1,0 +1,105 @@
+@import "../variables.scss";
+
+.menu-mob {
+    display: none;
+    position: relative;
+    padding: 10px 5px;
+    background: #efefef;
+    box-shadow: 0px 0px 9px 5px #ededed;
+    border: 1px solid #ababab;
+    text-transform: uppercase;
+}
+
+#hamburger-btn {
+    position: absolute;
+    top: 9px;
+    right: 6px;
+    width: 22px;
+    height: 22px;
+    &:before {
+        content: '';
+        position: absolute;
+        top: 2px;
+        left: 0;
+        width: 22px;
+        height: 16px;
+        border: 3px solid #767676;
+        border-left: 0;
+        border-right: 0;
+        @include trans-2s_ease(.3s)
+    }
+
+    &:after {
+        content: '';
+        position: absolute;
+        top: 9px;
+        left: 0;
+        width: 22px;
+        border-top: 3px solid #767676;
+        @include trans-2s_ease(.3s)
+    }
+
+    &.active {
+        &:before {
+            content: '';
+            position: absolute;
+            top: 10px;
+            left: 0;
+            width: 22px;
+            height: 0;
+            border-bottom: 0;
+            transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+            -moz-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            -o-transform: rotate(45deg);
+            @include trans-2s_ease(.3s)
+        }
+    
+        &:after {
+            content: '';
+            position: absolute;
+            top: 10px;
+            left: 0;
+            width: 22px;
+            height: 0;
+            transform: rotate(-45deg);
+            -webkit-transform: rotate(-45deg);
+            -moz-transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg);
+            -o-transform: rotate(-45deg);
+            @include trans-2s_ease(.3s)
+        }
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .nav-menu {
+        &__list {
+            &.active {
+                position: absolute;
+                top: 146px;
+                left: 0;
+                z-index: 3;
+                background: #efefef;
+                width: 98%;
+                border: 1px solid #ababab;
+                padding: 0 5px;
+            }
+        }
+    
+        &__item {
+            margin-right: 0;
+            padding: 5px 0;
+            border-bottom: 1px solid #ababab;
+            text-align: center;
+            &:last-child {
+                border-bottom: none;
+            }
+        }
+    
+        &__link {
+            font-size: 15px;
+        }
+    }
+}

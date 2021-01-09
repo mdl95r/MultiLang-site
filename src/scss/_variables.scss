@@ -1,0 +1,49 @@
+// Variables
+
+$color_main: #676767;
+$fz14px: 14px;
+$green-btn: #7bae21;
+$green: #7db122;
+$blue-color: #4cb2cb;
+$blue-color2: #38a0b9; 
+$blue-color3: #0c4b5a;
+$blue-color4: #4cb1ca;
+$blue-color5: #39A0B9;
+$h3-card: 16px;
+$color-white: #fff;
+$light-grey: #f7f7f7;
+$grey: #999a9b;
+
+// Mixins
+
+@mixin flx-sbn {
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin flx-list-items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+@mixin trans-2s_ease($seconds) {
+    transition: all $seconds ease;
+    -webkit-transition: all $seconds ease;
+    -moz-transition: all $seconds ease;
+    -ms-transition: all $seconds ease;
+    -o-transition: all $seconds ease;
+}
+
+@mixin hover {
+    color: $blue-color4;
+    @include trans-2s_ease(.4s);
+}
+
+@mixin transform($deg) {
+    transform: rotate($deg);
+    -webkit-transform: rotate($deg);
+    -moz-transform: rotate($deg);
+    -ms-transform: rotate($deg);
+    -o-transform: rotate($deg);
+}

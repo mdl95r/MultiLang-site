@@ -1,2 +1,1 @@
-# MultiLang site
- Пример мультиязычности на клиенте
+# LogoShop

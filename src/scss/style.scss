@@ -1,0 +1,78 @@
+@import "_variables.scss";
+@import "components/_header.scss";
+@import "media/_menu-mob.scss";
+@import "media/_media.scss";
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans';
+    color: $color_main;
+    min-width: 320px;
+}
+
+/* open-sans-regular - latin */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans Regular'), local('OpenSans-Regular'),
+         url('../fonts/OpenSans-Regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/OpenSans-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+}
+  /* open-sans-700 - latin */
+  @font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Open Sans Bold'), local('OpenSans-Bold'),
+         url('../fonts/OpenSans-Bold.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/OpenSans-Bold.ttf') format('truetype'), /* Safari, Android, iOS */
+  }
+
+ul, li {
+	list-style: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+h2 {
+    font-weight: normal;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+button {
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+a {
+    color: $color_main;
+}
+
+label {
+    cursor: pointer;
+}

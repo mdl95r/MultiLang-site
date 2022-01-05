@@ -1,4 +1,4 @@
- https://mdl95-showcase.ml/multiLang/index.html
+https://mdl95r.github.io/my-projects-storage/MultiLang-site/index.html
 
 ## Моя реализация переключения языков на клиенте. По моему, подойдет для небольших сайтов (лендинг, сайт-визитка).
 

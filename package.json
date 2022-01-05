@@ -4,7 +4,8 @@
   "description": "multilang site",
   "main": "index.html",
   "scripts": {
-    "start": "gulp"
+    "start": "gulp",
+    "copy": "gulp copyStatic"
   },
   "author": ".mdl",
   "license": "ISC",

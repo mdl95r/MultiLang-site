@@ -1,3 +1,4 @@
+const Path = require("path");
 const project_folder = "dest";
 const source_folder = "src";
 const components = "components";
@@ -134,6 +135,12 @@ function watchFiles() {
   gulp.watch([path.watch.langs], langs);
 }
 
+function copyStatic() {
+  const directoryName = Path.basename(__dirname);
+  console.log("\x1b[36m",`Project will be copied to the folder ${directoryName}`);
+  return gulp.src('dest/**').pipe(gulp.dest(`../my-projects-storage/${directoryName}`))
+}
+
 const build = gulp.series(clean, gulp.parallel(js, css, html, pug, images, fonts, langs));
 const watch = gulp.parallel(build, watchFiles, browserSync);
 
@@ -144,6 +151,7 @@ exports.images = images;
 exports.css = css;
 exports.html = html;
 exports.pug = pug;
+exports.copyStatic = copyStatic;
 exports.build = build;
 exports.watch = watch;
 exports.default = watch;

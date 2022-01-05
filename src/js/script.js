@@ -151,7 +151,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // закрытие попапа со списком при клике вне его
     document.addEventListener('click', (e) => {
         const trg = e.target;
-        console.log(trg);
         if (!trg.closest('.js-lang-select')) {
             document.querySelector(LANG_SELECT.SELECT_LIST).classList.remove(LANG_SELECT.SELECT_LIST_ACTIVE);
         }
